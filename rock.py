@@ -1,25 +1,22 @@
 import random
 
-moves = {'rock': 1,
-'paper': 2,
-'scissors': 3 
-}
+moves = ['rock', 'paper', 'scissors']
 
 def players_throw():
 		throw = 0
 		while throw == 0:		
 			print "\nROCK, PAPER, SCISSORS"
 			a = raw_input("SHOOT!!\n>> ")
-			action = a.lower()
+			action = str(a.lower())
 			if action in moves:
-				throw = moves.get(action) 
+				throw = moves.index(action) 
 				return throw
 			else:
 				print "TRY AGAIN!"
 
 def compare_throws(throw): 
-		x = random.randint(1,3)
-		sloth_throw = moves.keys()[moves.values().index(x)]
+		x = random.randint(0,2)
+		sloth_throw = moves[x]
 		print "\nThe Hatchet Sloth throws %s with great manual dexterity!!" % sloth_throw
 		diff = throw - x
 		if diff == 0:
@@ -68,3 +65,5 @@ def enter():
 			print "allow the Hatchet Sloth to bite your throat and slake its" 
 			print "terrible thirst on your hot, spurting blood."
 			return 'death'
+
+enter()
