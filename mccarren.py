@@ -23,7 +23,7 @@ def enter():
 				print "That's when you look up: MY GOD. There are Hatchet Sloths" 
 				print "everywhere. On the see-saw, on the slide, in the sandbox." 
 				print "They are not quite so terrible after all. But now you've" 
-				print "gone and murdered one. What is your fucking problem, dude?"
+				print "gone and murdered one. What is your problem, dude?"
 				print "Seriously. You grab the dying Hatchet Sloth's hatchet and" 
 				print "use it to \n\nSEPPUKUUUUUUUUUU"
 				return 'death'
