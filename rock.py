@@ -65,5 +65,3 @@ def enter():
 			print "allow the Hatchet Sloth to bite your throat and slake its" 
 			print "terrible thirst on your hot, spurting blood."
 			return 'death'
-
-enter()
